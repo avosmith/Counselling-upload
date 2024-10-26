@@ -1,7 +1,6 @@
 import streamlit as st 
 import firebase_admin
 import pandas as pd 
-from firebase_admin import auth 
 from firebase_admin import credentials
 import firebase_admin
 from firebase_admin import firestore
@@ -23,6 +22,7 @@ cred = {
   "client_x509_cert_url": st.secrets["client_x509_cert_url"],
   "universe_domain": st.secrets["universe_domain"]
 }
+
 
 creds = credentials.Certificate(cred)
 try:
